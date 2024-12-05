@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia Gallery</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #4caf50;
+      }
+
+      .media-section {
+        margin-bottom: 30px;
+      }
+
+      .media-section img,
+      .media-section video,
+      .media-section audio,
+      .media-section iframe {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 5px;
+      }
+
+      p {
+        text-align: center;
+        margin-top: 10px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page Title -->
+    <h1>Multimedia Gallery</h1>
+
+    <!-- Image Section -->
+    <div class="media-section">
+      <img src="alaska1.jpg" alt="A beautiful landscape" />
+      <p>This image shows a beautiful landscape with mountains and a sunset.</p>
+    </div>
+
+    <!-- Video Section -->
+    <div class="media-section">
+      <video width="400px" controls>
+        <source
+          src="C:\Users\HP\OneDrive\Desktop\جلسات\5\5.mp4"
+          type="video/mp4"
+        />
+        <source src="example-video.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+      <p>Watch this short video about the wonders of nature.</p>
+    </div>
+
+    <!-- Audio Section -->
+    <div class="media-section">
+      <audio controls>
+        <source
+          src="C:\Users\HP\OneDrive\Desktop\جلسات\5\5.mp4"
+          type="audio/mpeg"
+        />
+        <source src="example-audio.ogg" type="audio/ogg" />
+        Your browser does not support the audio element.
+      </audio>
+      <p>Listen to this soothing piece of music.</p>
+    </div>
+
+    <!-- Google Maps Section -->
+    <div class="media-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5388.556760183222!2d37.03347031967504!3d36.57689194203433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152fc11eb596b9cf%3A0x38828485936ff8b9!2z2KzYp9mF2LnYqSDYrdmE2Kgg2KfZhNit2LHYqQ!5e0!3m2!1sar!2s!4v1725107288310!5m2!1sar!2s"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <p>
+        Explore Federation Square in Melbourne, Australia with this interactive
+        map.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essential Apps</title>
+    <style>
+ 
+      /* Global Styles */
+      body {
+        background-color: rgb(61, 61, 61);
+        padding: 10px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Container Styles */
+      .container {
+        width: 1000px;
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: linear-gradient(to right, #8b4513, #800080);
+        color: white;
+      }
+
+      /* Header Styles */
+      .header {
+        margin-bottom: 20px;
+      }
+
+      .header > * {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .header p {
+        margin: 5px 0 0;
+        font-size: 14px;
+      }
+
+      .header .button {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      /* Apps Container Styles */
+      .apps-container {
+        display: flex;
+        width: 1200px;
+        height: 300px;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+      }
+
+      /* App Card Styles */
+      .app-card {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        width: 150px;
+        height: 220px;
+        flex-shrink: 0;
+      }
+
+      .app-card .imgBackGroung ~ * {
+        margin: 10px;
+      }
+
+      .app-card .imgBackGroung {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60%;
+        background-color: #727272;
+      }
+
+      .app-card .app-icon {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+
+      .app-card .app-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .app-card .app-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Essential apps</h1>
+        <p>
+          Take your Windows experience to new heights with these must-have apps
+        </p>
+        <a href="#" class="button">See all</a>
+      </div>
+
+      <div class="apps-container">
+        <div class="app-card">
+          <div class="imgBackGroung">
+            <img src="images/icon 4.png" alt="TikTok" class="app-icon" />
+          </div>
+
+
+
+
+          
+          <div class="app-name">TikTok</div>
+          <div class="app-info">
+            <span>4.3 ★</span>
+            <span>Installed</span>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="imgBackGroung" style="background-color: rgb(208, 22, 22)">
+            <img src="images/icon 3.png" alt="TikTok" class="app-icon" />
+          </div>
+          <div class="app-name">Adobe Acrobat Reader DC</div>
+          <div class="app-info">
+            <span>3.1 ★</span>
+            <span>Free</span>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="imgBackGroung" style="background-color: rgb(36, 36, 181)">
+            <img src="images/icon 2.png" alt="TikTok" class="app-icon" />
+          </div>
+          <div class="app-name">LinkedIn</div>
+          <div class="app-info">
+            <span>3.9 ★</span>
+            <span>Free</span>
+          </div>
+        </div>
+        <div class="app-card">
+          <div class="imgBackGroung">
+            <img src="images/icon 1.png" alt="TikTok" class="app-icon" />
+          </div>
+          <div class="app-name">Threads, an Instagram app</div>
+          <div class="app-info">
+            <span>4.5 ★</span>
+            <span>Free</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

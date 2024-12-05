@@ -1,0 +1,17 @@
+https://www.theguardian.com/film/2019/aug/25/for-sama-documentary-interview-waad-al-kateab
+Question 
+Write an HTML code to create a simple website with two pages:
+
+1. home page  
+   - Contains a heading and a hyperlinks  that navigates to Articles Page.
+
+2. articles Page 2
+   - Contains four hyperlinks links:
+     - A hyperlink to scroll to the top of the page.
+     - A hyperlink to scroll to the middle of the page.
+     - A hyperlink to scroll to the bottom of the page.
+     - A hyperlink to navigate back to home page.
+   - Contains two articles, each consisting of an image and heading and some random text.
+   - Each article should have a hyperlink to download the image.
+
+Ensure proper use of navigation and layout elements to achieve the desired functionality.

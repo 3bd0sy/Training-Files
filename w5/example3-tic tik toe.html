@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        position: relative;
+        top: 60px;
+        left: 200px;
+      }
+
+      .Box {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 2px solid #333;
+        box-sizing: border-box;
+        font-size: 40px;
+        background-color: #fff;
+        text-align: center;
+        font-size: 150px;
+      }
+
+      .container div:nth-child(even) {
+        background-color: #2f7e35;
+        color: #2f7e35;
+      }
+      .container div:nth-child(even):hover {
+        color: white;
+        background-color: #2f7e35;
+      }
+      .container div:nth-child(odd)::before {
+        content: "X";
+      }
+      .container div:nth-child(odd):hover {
+        color: white;
+        color: tomato;
+      }
+      .container div:nth-child(odd) {
+        background-color: tomato;
+      }
+      /* .container div:nth-child(odd)::before {
+            content: "O";
+        } */
+      .Box-1 {
+        left: 0;
+        top: 0;
+      }
+
+      .Box-2 {
+        left: 200px;
+        top: 0;
+      }
+
+      .Box-3 {
+        left: 400px;
+        top: 0;
+      }
+
+      .Box-4 {
+        left: 0;
+        top: 200px;
+      }
+
+      .Box-5 {
+        left: 200px;
+        top: 200px;
+      }
+
+      .Box-6 {
+        left: 400px;
+        top: 200px;
+      }
+
+      .Box-7 {
+        left: 0;
+        top: 400px;
+      }
+
+      .Box-8 {
+        left: 200px;
+        top: 400px;
+      }
+
+      .Box-9 {
+        left: 400px;
+        top: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="Box Box-1"></div>
+      <div class="Box Box-2">O</div>
+      <div class="Box Box-3"></div>
+      <div class="Box Box-4">O</div>
+      <div class="Box Box-5"></div>
+      <div class="Box Box-6">O</div>
+      <div class="Box Box-7"></div>
+      <div class="Box Box-8">O</div>
+      <div class="Box Box-9"></div>
+    </div>
+  </body>
+</html>

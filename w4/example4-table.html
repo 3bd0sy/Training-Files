@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Comprehensive CSS Guide with Examples</title>
+    <style>
+      /* Table styling */
+      table {
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      /* Header and cell styling */
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      /* First row (header) styling */
+      thead tr {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      /* Even rows styling */
+      tbody tr:nth-child(even) {
+        background-color: #cecece;
+      }
+
+      /* Odd rows styling */
+      tbody tr:nth-child(odd) {
+        background-color: #ffffff;
+      }
+
+      /* First column styling */
+      td:first-child {
+        font-weight: bold;
+        /* background-color: #4caf50; */
+      }
+
+      /* Last column styling */
+      td:last-child {
+        font-style: italic;
+      }
+
+      /* Hover effect on cells */
+      td:hover {
+        background-color: #6ab1f9;
+      }
+
+      /* Pseudo-elements */
+      td::before {
+        content: "# ";
+        color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Topic</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic CSS</td>
+          <td>CSS allows styling HTML elements.</td>
+          <td>p { color: blue; font-size: 16px; }</td>
+        </tr>
+        <tr id="special-row">
+          <td>Borders</td>
+          <td>Borders can be added to the elements.</td>
+          <td>.box { border: 2px solid red; }</td>
+        </tr>
+        <tr>
+          <td class="highlight">CSS Selectors</td>
+          <td>Include class, ID, attribute, and sibling selectors.</td>
+          <td>#unique { font-weight: bold; }</td>
+        </tr>
+        <tr>
+          <td data-type="advanced">Pseudo-classes</td>
+          <td>Used to define special states for elements.</td>
+          <td>button:hover { background-color: lightblue; }</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

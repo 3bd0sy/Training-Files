@@ -1,0 +1,52 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "files.autoSave": "afterDelay",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontSize": 25,
+    "todohighlight.defaultStyle": {
+        "backgroundColor": "transparent",
+        "color": "#00FF00",
+        "isWholeLine": false
+    },
+    "todohighlight.keywords": [
+        {
+            "text": "3BDO:",
+            "color": "#00FF00",
+            "backgroundColor": "transparent",
+            "isWholeLine": false
+        },
+        {
+            "text": "SECTION:",
+            "color": "#fff",
+            "backgroundColor": "#0F0",
+            "isWholeLine": true
+        },
+        {
+            "text": "WARNING:",
+            "color": "#fff",
+            "backgroundColor": "#FF0000",
+            "isWholeLine": true
+        },
+        {
+            "text": "ALERT:",
+            "color": "#f0f",
+            "backgroundColor": "#FFFF00",
+            "isWholeLine": true
+        }
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss"
+    ]
+}

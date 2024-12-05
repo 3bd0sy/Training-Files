@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 20%);
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      header {
+        grid-column: 1 / -1;
+        background-color: lightblue;
+      }
+      aside {
+        grid-row: 2 / 5;
+        background-color: yellowgreen;
+      }
+      main {
+        /*
+             rows from 2 to 5
+             cols from 2 to 7 
+             grid-row-start: ;
+        */
+        grid-area: 2 / 2 / 5 / 7;
+        background-color: lightcoral;
+      }
+
+      footer {
+        grid-column: 1 / -1;
+        background-color: lightgray;
+      }
+      body > * {
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        text-shadow: 0 2px 5px rgba(1, 1, 0, 1);
+        font-size: 40px;
+      }
+      body > *::selection {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+
+    <aside>aside</aside>
+
+    <main>main</main>
+
+    <footer>footer</footer>
+  </body>
+</html>

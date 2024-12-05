@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto repeat(3, 1fr) auto;
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .header {
+        grid-column: 1 / -1;
+        background-color: lightblue;
+      }
+
+      .side {
+        grid-row: 2 / 5;
+        background-color: yellowgreen;
+      }
+
+      .main {
+        /*
+             rows from 2 to 4
+             cols from 2 to 6 
+            */
+        grid-area: 2 / 2 / 5 / 7;
+        background-color: lightcoral;
+      }
+
+      .footer {
+        grid-column: 1 / -1;
+        background-color: lightgray;
+      }
+      .container div {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">HEADER</div>
+      <div class="side">SIDE-BAR</div>
+      <div class="main">MAIN CONTENT</div>
+      <div class="footer">FOOTER</div>
+    </div>
+  </body>
+</html>

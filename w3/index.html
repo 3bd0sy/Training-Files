@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Training</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .topic {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      code {
+        background-color: #e6e6e6;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>HTML and CSS Training</h1>
+
+      <div class="topic">
+        <h2>1. Lists</h2>
+        <h3>Unordered Lists</h3>
+        <ul>
+          <li>Used for non-sequential items</li>
+          <li>Created with <code>&lt;ul&gt;</code> tag</li>
+          <li>List items use <code>&lt;li&gt;</code> tag</li>
+        </ul>
+        <h3>Ordered Lists</h3>
+        <ol>
+          <li>Used for sequential items</li>
+          <li>Created with <code>&lt;ol&gt;</code> tag</li>
+          <li>
+            Can use <code>type</code> attribute for different numbering styles
+          </li>
+        </ol>
+        <h3>Description Lists</h3>
+        <dl>
+          <dt>Term (dt)</dt>
+          <dd>Description (dd)</dd>
+        </dl>
+      </div>
+
+      <div class="topic">
+        <h2>2. Tables</h2>
+        <p>Tables are used to display data in rows and columns.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;table&gt;</code></td>
+              <td>Defines a table</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;thead&gt;</code></td>
+              <td>Defines a table header section</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;tbody&gt;</code></td>
+              <td>Defines a table body section</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;tfoot&gt;</code></td>
+              <td>Defines a table footer section</td>
+            </tr>
+
+            <tr>
+              <td><code>&lt;tr&gt;</code></td>
+              <td>Defines a table row</td>
+            </tr>
+            <tr>
+              <td><code>&lt;th&gt;</code></td>
+              <td>Defines a table header</td>
+            </tr>
+            <tr>
+              <td><code>&lt;td&gt;</code></td>
+              <td>Defines a table cell</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="topic">
+        <h2>3. Containers</h2>
+        <p>Containers are used to group and structure content:</p>
+        <ul>
+          <li><code>&lt;div&gt;</code>: Generic container for flow content</li>
+          <li><code>&lt;span&gt;</code>: Generic inline container</li>
+          <li>
+            <code>&lt;figure&gt;</code>: Specialized container for grouping
+            media and captions
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h2>4. Semantic Elements</h2>
+        <p>
+          Semantic elements provide meaning to the structure of web content:
+        </p>
+        <ul>
+          <li><code>&lt;header&gt;</code></li>
+          <li><code>&lt;nav&gt;</code></li>
+          <li><code>&lt;main&gt;</code></li>
+          <li><code>&lt;article&gt;</code></li>
+          <li><code>&lt;section&gt;</code></li>
+          <li><code>&lt;aside&gt;</code></li>
+          <li><code>&lt;footer&gt;</code></li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h2>5. Structuring Web Pages</h2>
+        <p>A basic structure for a web page:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;!-- Navigation menu --&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;section&gt;
+                &lt;!-- Content sections --&gt;
+            &lt;/section&gt;
+        &lt;/article&gt;
+        &lt;aside&gt;
+            &lt;!-- Sidebar content --&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;!-- Footer content --&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+
+      <div class="topic">
+        <h2>6. CSS (Cascading Style Sheets)</h2>
+        <p>
+          CSS is used to style HTML elements. There are three ways to include
+          CSS:
+        </p>
+        <ol>
+          <li>Inline CSS: Using the <code>style</code> attribute</li>
+          <li>
+            Internal CSS: Using the <code>&lt;style&gt;</code> tag in the
+            <code>&lt;head&gt;</code> section
+          </li>
+          <li>External CSS: Linking an external .css file</li>
+        </ol>
+        <p>Example of CSS properties:</p>
+        <pre><code>.example-class {
+    color: blue;
+    font-size: 16px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+}</code></pre>
+      </div>
+    </div>
+  </body>
+</html>

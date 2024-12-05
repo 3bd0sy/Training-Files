@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    /> -->
+    <style>
+      @font-face {
+        font-family: "CustomFont";
+        src: url("betm/BetmLight.otf") format("opentype");
+      }
+     
+      bodyd {
+        font-family: "CustomFont", sans-serif;
+        /* font-family: "Bebas Neue", sans-serif;
+        font-family: "Bebas Neue", system-ui; */
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      body,
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 30px;
+      }
+      .card {
+        display: flex;
+        gap: 24px;
+        height: 272px;
+        width: 720px;
+        padding: 24px;
+        border-radius: 12px;
+        border: 2px solid rgb(150, 150, 150);
+        box-shadow: 5px 5px 5px rgb(144, 144, 144),
+          -5px 5px 5px rgb(144, 144, 144);
+      }
+      .card > .image > img {
+        height: 224px;
+        width: 324;
+        border-radius: 5px;
+      }
+
+      .card-content > h2 {
+        height: 24px;
+        margin-bottom: 4px;
+      }
+      .card-content > h2 + p {
+        height: 24px;
+      }
+      .card-content > .list-container {
+        height: 20px;
+        margin: 16px 0px;
+        display: flex;
+        gap: 4px;
+      }
+      .card-content > .list-container > span {
+        border: 1px solid rgb(220, 220, 220);
+        border-radius: 5px;
+        padding: 0px 5px;
+      }
+      .list-container + p {
+        height: 36px;
+        margin-bottom: 16px;
+      }
+      .buttons-continer {
+        margin-top: 24px;
+        height: 40px;
+      }
+      .buttons-continer > * {
+        height: 100%;
+      }
+      .buttons-continer > button:nth-child(1) {
+        width: 80px;
+        border-radius: 5px;
+        margin-right: 12px;
+      }
+      .buttons-continer > button:nth-child(2) {
+        background-color: #6d5ffd;
+        border-radius: 5px;
+        width: 210px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image">
+        <img src="https://via.placeholder.com/300x200.png" alt="" />
+      </div>
+
+      <div class="card-content">
+        <h2>ENG 3BDO</h2>
+
+        <p>
+          informatics enginner at
+          <a href="">syria</a>
+        </p>
+
+        <div class="list-container">
+          <span>React</span>
+          <span>Python</span>
+          <span>Blender</span>
+        </div>
+
+        <p>
+          Lorem ipsum dolor
+          <br />
+          sit amet consectetur adipisicing sd fakt polo .
+        </p>
+
+        <hr />
+        <div class="buttons-continer">
+          <button>More</button>
+          <button>Send Email</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

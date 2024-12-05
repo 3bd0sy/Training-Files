@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <style>
+    /* Basic styling for table, cells, and headers */
+    table,
+    td,
+    th {
+      border: 1px solid gray;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    /* Align footer text to the left */
+    tfoot {
+      text-align: left;
+    }
+    /* Styling for product rows */
+    .product {
+      background-color: gold;
+      width: 300px;
+    }
+    /* Highlight class styling */
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Table title -->
+  <h2>Product List</h2>
+
+  <!-- Product table -->
+  <table>
+    <thead>
+      <!-- Table header row -->
+      <tr>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Available Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Product rows -->
+      <tr>
+        <td>Product 1</td>
+        <td>Description of Product 1</td>
+        <td>$10</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Product 2</td>
+        <td>Description of Product 2</td>
+        <td>$20</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Product 3</td>
+        <td>Description of Product 3</td>
+        <td>$30</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Product 4</td>
+        <td>Description of Product 4</td>
+        <td>$40</td>
+        <td>5</td>
+      </tr>
+      <tr>  
+        <td>Product 5</td>
+        <td>Description of Product 5</td>
+        <td>$50</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <!-- Footer row for total products and total value -->
+      <tr>
+        <td colspan="3">Total Products</td>
+        <td>58</td>
+      </tr>
+      <tr>
+        <td colspan="3">Total Value</td>
+        <td>$150</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>

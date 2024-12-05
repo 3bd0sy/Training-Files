@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Guide with Examples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .topic {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      code {
+        background-color: #e6e6e6;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .example {
+        background-color: #e0f0ff;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+      }
+      .example-output {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Comprehensive CSS Guide with Examples</h1>
+
+      <!-- Basic CSS -->
+      <div class="topic">
+        <h2>1. Basic CSS</h2>
+        <p>
+          CSS allows you to style HTML elements with various properties such as
+          colors, fonts, and layouts.
+        </p>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>p {
+  color: blue;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}</code></pre>
+          <div class="example-output">
+            <p
+              style="
+                color: blue;
+                font-size: 16px;
+                font-family: Arial, sans-serif;
+              "
+            >
+              This is a styled paragraph.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Border -->
+      <div class="topic">
+        <h2>2. Borders</h2>
+        <p>
+          Borders can be added to elements with different styles such as
+          <code>solid</code>, <code>dotted</code>, and <code>double</code>. You
+          can also change the border color, width, and radius.
+        </p>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>.box {
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}</code></pre>
+          <div class="example-output">
+            <div
+              style="border: 2px solid red; border-radius: 10px; padding: 10px"
+            >
+              This is a box with a border.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Normalize -->
+      <div class="topic">
+        <h2>3. Normalize CSS</h2>
+        <p>
+          Normalize.css is a small CSS file that ensures cross-browser
+          consistency by resetting browser styles.
+        </p>
+        <div class="example">
+          <h4>Example:</h4>
+          <p>To use Normalize.css, include this link in your HTML head:</p>
+          <pre><code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- Selectors -->
+      <div class="topic">
+        <h2>4. CSS Selectors</h2>
+        <h3>Class and ID Selectors</h3>
+        <ul>
+          <li>Class selector: <code>.classname</code></li>
+          <li>ID selector: <code>#idname</code></li>
+        </ul>
+        <h3>Attribute Selectors</h3>
+        <ul>
+          <li>Exact match: <code>[attribute="value"]</code></li>
+          <li>Contains: <code>[attribute~="value"]</code></li>
+        </ul>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>.highlight { background-color: yellow; }
+#unique { font-weight: bold; }
+</code></pre>
+          <div class="example-output">
+            <p class="highlight" style="background-color: yellow">
+              This is highlighted text.
+            </p>
+            <p id="unique" style="font-weight: bold">This is unique text.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Relational Selectors -->
+      <div class="topic">
+        <h2>5. Relational Selectors</h2>
+        <ul>
+          <li>Descendant: <code>parent child</code></li>
+          <li>Child: <code>parent > child</code></li>
+          <li>Adjacent Sibling: <code>element + sibling</code></li>
+          <li>General Sibling: <code>element ~ siblings</code></li>
+        </ul>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>div p { color: blue; }
+ul > li { list-style-type: square; }
+h1 + p { font-weight: bold; }
+h1 ~ p { font-style: italic; }</code></pre>
+          <div class="example-output">
+            <div>
+              <p style="color: blue">
+                This paragraph is blue (descendant selector).
+              </p>
+            </div>
+            <ul>
+              <li style="list-style-type: square">
+                This list item has a square bullet (child selector).
+              </li>
+            </ul>
+            <h1>Heading</h1>
+            <p style="font-weight: bold">
+              This paragraph is bold (adjacent sibling selector).
+            </p>
+            <p style="font-style: italic">
+              This paragraph is italic (general sibling selector).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pseudo-classes -->
+      <div class="topic">
+        <h2>6. Pseudo-classes</h2>
+        <ul>
+          <li>
+            <code>:hover</code> - Triggered when hovering over an element.
+          </li>
+          <li><code>:nth-child(n)</code> - Selects the nth child element.</li>
+        </ul>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>button:hover { background-color: lightblue; }
+li:nth-child(odd) { background-color: #f2f2f2; }</code></pre>
+          <div class="example-output">
+            <button style="padding: 5px 10px">Hover over me</button>
+            <ul style="padding-left: 20px">
+              <li style="background-color: #f2f2f2">First item</li>
+              <li>Second item</li>
+              <li style="background-color: #f2f2f2">Third item</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pseudo-elements -->
+      <div class="topic">
+        <h2>7. Pseudo-elements</h2>
+        <ul>
+          <li><code>::before</code> - Adds content before an element.</li>
+          <li><code>::after</code> - Adds content after an element.</li>
+          <li>
+            <code>::first-line</code> - Styles the first line of an element.
+          </li>
+        </ul>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>p::before { content: "→ "; color: red; }
+p::after { content: " ←"; color: blue; }
+p::first-line { font-weight: bold; }</code></pre>
+          <div class="example-output">
+            <p style="position: relative">
+              <span style="font-weight: bold"
+                >This is a paragraph with pseudo-elements.</span
+              ><br />
+              The rest of the paragraph continues here.
+              <span style="position: absolute; left: -15px; top: 0; color: red"
+                >→</span
+              >
+              <span
+                style="position: absolute; right: -15px; top: 0; color: blue"
+                >←</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Selector Specificity -->
+      <div class="topic">
+        <h2>8. Selector Specificity</h2>
+        <p>
+          Specificity determines which style will be applied when multiple rules
+          target the same element.
+        </p>
+        <ul>
+          <li>Inline styles have the highest specificity.</li>
+          <li>ID selectors are stronger than class selectors.</li>
+        </ul>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>#myId { color: red; }
+.myClass { color: blue; }
+p { color: green; }</code></pre>
+          <div class="example-output">
+            <p id="myId" class="myClass" style="color: red">
+              This text is red due to ID selector specificity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inheritance -->
+      <div class="topic">
+        <h2>9. Inheritance</h2>
+        <p>
+          Some CSS properties are inherited from parent elements, such as
+          <code>color</code> and <code>font-family</code>.
+        </p>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>div {
+  color: blue;
+  font-family: Arial, sans-serif;
+}</code></pre>
+          <div class="example-output">
+            <div style="color: blue; font-family: Arial, sans-serif">
+              Parent div
+              <p>
+                This paragraph inherits color and font-family from its parent.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colors and Gradients -->
+      <div class="topic">
+        <h2>10. Colors and Gradients</h2>
+        <h3>Color Formats</h3>
+        <ul>
+          <li>RGB: <code>rgb(255, 0, 0)</code></li>
+          <li>Hexadecimal: <code>#FF0000</code></li>
+        </ul>
+        <h3>Gradients</h3>
+        <p>Gradients can create smooth transitions between colors.</p>
+        <div class="example">
+          <h4>Example:</h4>
+          <pre><code>.color-example { color: rgb(0, 128, 0); }
+.gradient-example {
+  background: linear-gradient(to right, red, yellow);
+  height: 50px;
+}</code></pre>
+          <div class="example-output">
+            <p style="color: rgb(0, 128, 0)">This text uses RGB color.</p>
+            <div
+              style="
+                background: linear-gradient(to right, red, yellow);
+                height: 50px;
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

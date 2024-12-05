@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Topics - Part 2</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #000000;
+        
+      }
+      h1{
+        color: #ffffff;
+      }
+      h2 {
+        color: #2c3e50;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #a8a8a8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .topic {
+        background-color: #ecf0f1;
+        padding: 20px;
+        margin-bottom: 120px;
+        border-radius: 5px;
+      }
+      code {
+        background-color: #e74c3c;
+        color: #ffffff;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+      .example {
+        border: 1px solid #bdc3c7;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Advanced CSS Topics - Part 3</h1>
+
+      <div class="topic">
+        <h2>1. Float</h2>
+        <p>
+          The <strong>float</strong> property allows elements to float to the
+          left or right within their container. It's commonly used for page
+          layouts and to wrap text around images.
+        </p>
+        <p>Key properties related to float include:</p>
+        <ul>
+          <li>
+            <strong>clear:</strong> Prevents elements from wrapping around
+            floated elements. Values include <code>left</code>,
+            <code>right</code>, or <code>both</code>.
+          </li>
+        </ul>
+        <div class="example">
+          <p>Example of a floated element:</p>
+          <code>float: left;</code>
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>2. Flex Box</h2>
+        <p>
+          <strong>Flexbox</strong> is a modern layout system in CSS that helps
+          align and distribute space efficiently within a container, even when
+          the size of its items is dynamic or unknown.
+        </p>
+        <p>Key Flexbox properties:</p>
+        <ul>
+          <li>
+            <strong>justify-content:</strong> Controls the horizontal alignment
+            of items within the flex container. Options include
+            <code>flex-start</code>, <code>center</code>, and
+            <code>space-between</code>.
+          </li>
+          <li>
+            <strong>align-items:</strong> Controls the vertical alignment of
+            items. Options include <code>flex-start</code>, <code>center</code>,
+            and <code>stretch</code>.
+          </li>
+          <li>
+            <strong>flex-direction:</strong> Defines the direction of the main
+            axis (horizontal or vertical). Options include <code>row</code>,
+            <code>row-reverse</code>, <code>column</code>, and
+            <code>column-reverse</code>.
+          </li>
+          <li>
+            <strong>flex-wrap:</strong> Allows items to wrap if there isn't
+            enough space. Options are <code>nowrap</code>, <code>wrap</code>,
+            and <code>wrap-reverse</code>.
+          </li>
+        </ul>
+        <div class="example">
+          <p>Example of a flex container:</p>
+          <code>display: flex;</code>
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>3. Grid Box</h2>
+        <p>
+          <strong>Grid Layout</strong> is a two-dimensional layout system in
+          CSS. It allows the creation of more complex layouts using rows and
+          columns.
+        </p>
+        <p>Key Grid properties:</p>
+        <ul>
+          <li>
+            <strong>grid-template-columns:</strong> Defines the number and width
+            of columns. Example: <code>grid-template-columns: 1fr 2fr;</code>.
+          </li>
+          <li>
+            <strong>grid-template-rows:</strong> Defines the number and height
+            of rows. Example: <code>grid-template-rows: 100px auto;</code>.
+          </li>
+          <li>
+            <strong>grid-gap:</strong> Adds space between rows and columns.
+            Example: <code>grid-gap: 20px;</code>.
+          </li>
+        </ul>
+        <div class="example">
+          <p>Example of a grid container:</p>
+          <code>display: grid;</code>
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>4. Hiding Elements</h2>
+        <p>
+          There are multiple ways to hide elements in CSS depending on whether
+          you want the element to occupy space or not.
+        </p>
+        <p>Common properties for hiding elements:</p>
+        <ul>
+          <li>
+            <strong>display: none;</strong> Completely removes the element from
+            the layout.
+          </li>
+          <li>
+            <strong>visibility: hidden;</strong> Hides the element but keeps its
+            space in the layout.
+          </li>
+          <li>
+            <strong>opacity: 0;</strong> Makes the element transparent, but it
+            remains interactive and part of the layout.
+          </li>
+        </ul>
+        <div class="example">
+          <p>Example of hiding an element:</p>
+          <code>display: none;</code>
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>5. Media Query</h2>
+        <p>
+          <strong>Media queries</strong> allow you to apply CSS rules based on
+          the device's characteristics, such as screen width. This is essential
+          for responsive design.
+        </p>
+        <p>Key instructions:</p>
+        <ul>
+          <li>
+            <strong>max-width:</strong> Apply styles when the screen width is
+            less than or equal to the defined width.
+          </li>
+          <li>
+            <strong>min-width:</strong> Apply styles when the screen width is
+            greater than or equal to the defined width.
+          </li>
+        </ul>
+        <div class="example">
+          <p>Example of a media query:</p>
+          <code>@media (max-width: 600px) { /* styles */ }</code>
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>6. Styling Font</h2>
+        <p>
+          Font styling includes controlling the appearance of text on the
+          webpage. Common font properties include:
+        </p>
+        <ul>
+          <li><strong>font-family:</strong> Specifies the font type.</li>
+          <li><strong>font-size:</strong> Controls the size of the text.</li>
+          <li>
+            <strong>font-weight:</strong> Sets the thickness of the font (e.g.,
+            <code>bold</code>, <code>normal</code>).
+          </li>
+          <li><strong>color:</strong> Defines the text color.</li>
+        </ul>
+        <div class="example">
+          <p>Example of styled text:</p>
+          <code>font-family: Arial; font-size: 18px;</code>
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>7. Embedding Web Font</h2>
+        <p>
+          Embedding web fonts allows you to use custom fonts that are not
+          available by default on users' systems.
+        </p>
+        <div class="example">
+          <p>Example of embedding a web font:</p>
+          <code
+            >@font-face { font-family: 'MyFont'; src: url('myfont.woff2');
+            }</code
+          >
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>8. Flash of Unstyled Text (FOUT)</h2>
+        <p>
+          <strong>Flash of Unstyled Text (FOUT)</strong> occurs when a web font
+          takes time to load, and the browser displays the fallback font
+          momentarily. You can avoid this using <code>font-display</code>.
+        </p>
+        <div class="example">
+          <p>Addressing FOUT:</p>
+          <code>font-display: swap;</code>
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>9. Font Services</h2>
+        <p>
+          Font services such as Google Fonts provide a wide range of free,
+          ready-to-use fonts that can be embedded into websites.
+        </p>
+        <div class="example">
+          <p>Using Google Fonts:</p>
+          <code
+            >@import
+            url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');</code
+          >
+        </div>
+      </div>
+
+      <div class="topic">
+        <h2>10. System Font Stack</h2>
+        <p>
+          A system font stack uses fonts that are already available on users'
+          devices, which improves loading speed and ensures consistency.
+        </p>
+        <div class="example">
+          <p>Example of using system fonts:</p>
+          <code
+            >font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            "Helvetica Neue", Arial, sans-serif;</code
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

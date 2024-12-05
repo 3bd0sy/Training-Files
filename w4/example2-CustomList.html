@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <style>
+      .custom-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 50px;
+      }
+      li {
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: #f0f0f0;
+        border-left: 5px solid #394235;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      .item2 {
+        background-color: burlywood;
+        width: 400px;
+      }
+      .item3 {
+        background-color: rgb(135, 171, 222);
+        width: 300px;
+        text-align: right;
+        color: white;
+      }
+      .item4 {
+        background-color: rgb(222, 152, 135);
+        text-align: center;
+        width: 200px;
+      }
+      /* .custom-list :nth-child(2) {color: yellow;} */
+    </style>
+  </head>
+  <body>
+    <div style="width: 500px">
+      <h2>Custom List Styling</h2>
+      <ul class="custom-list">
+        <li>List Item 1</li>
+        <li class="item2">List Item 2</li>
+        <li class="item3">List Item 3</li>
+        <li class="item4">List Item 4</li>
+        <li>List Item 5</li>
+      </ul>
+    </div>
+  </body>
+</html>

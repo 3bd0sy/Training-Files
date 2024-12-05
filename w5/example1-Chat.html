@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Header Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            background-color: #fafafa;
+        }
+
+        .header {
+            background-color: #4b6584;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            border-bottom: 3px solid #2d98da;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+        }
+
+        /* Site name */
+        .site-name {
+            float: left;
+            font-size: 1.8em;
+            color: aqua;
+            margin: 0;
+            padding: 0.5em 0;
+        }
+
+        /* Navigation menu */
+        .nav {
+            float: right;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin-left: 1em;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000000;
+            background-color: aqua;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #2d98da;
+        }
+
+
+        .logo {
+            margin-left: 10px;
+            margin-top: -5px;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+        }
+
+        .logo img {
+            width: 50px;
+        }
+
+        header * {
+            margin-top: 10px;
+        }
+
+        body {
+            background-color: #3f3f3f;
+height: 200vh;
+        }
+
+        main>div {
+            position: fixed;/**/
+            bottom: 0px;
+            width: 60%;
+            height: 200px;
+            left: 20%;
+            background-color: #7f7f7f;
+            border: 2px solid;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            /* text-align: center; */
+        }
+
+        .text-element {
+            height: 80px;
+            width: 80%;
+            margin-top: 50px;
+            margin-left: 70px;
+            background-color: #c8c8c8;
+            border-radius: 10px;
+            float: left;
+            font-size: 40px;
+            padding: 5px;
+
+            text-shadow: 2px 5px 2px #2d98da;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px;
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+            position: relative;
+            top: 70px;
+            left: -80px;
+        }
+
+        .text-element~p {
+            clear: both;
+            position: relative;
+            top: 10px;
+            left: 30%;
+
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="site-name">My Website</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Docs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Components</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Showcase</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <img src="https://www.freeiconspng.com/thumbs/logo-whatsapp-png/get-logo-whatsapp-png-pictures-1.png "
+                alt="" />
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <div class="text-element">How can i help you ?</div>
+            <a href="" class="btn">Send</a>
+            <p>Made By ENG 3BDO</p>
+        </div>
+    </main>
+</body>
+
+</html>

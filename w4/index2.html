@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Topics</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .topic {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      code {
+        background-color: #e6e6e6;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Advanced CSS Topics</h1>
+
+      <div class="topic">
+        <h2>1. CSS Selectors</h2>
+        <h3>Class and ID Selectors</h3>
+        <ul>
+          <li>Class selector: <code>.classname</code></li>
+          <li>ID selector: <code>#idname</code></li>
+        </ul>
+        <h3>Attribute Selectors</h3>
+        <ul>
+          <li>Exact match: <code>[attribute="value"]</code></li>
+          <li>Contains: <code>[attribute~="value"]</code></li>
+          <li>Starts with: <code>[attribute^="value"]</code></li>
+          <li>Ends with: <code>[attribute$="value"]</code></li>
+          <li>Contains substring: <code>[attribute*="value"]</code></li>
+        </ul>
+        <h3>Combinators</h3>
+        <ul>
+          <li>Descendant: <code>selector1 selector2</code></li>
+          <li>Child: <code>selector1 > selector2</code></li>
+          <li>Adjacent sibling: <code>selector1 + selector2</code></li>
+          <li>General sibling: <code>selector1 ~ selector2</code></li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h2>2. Pseudo-classes and Pseudo-elements</h2>
+        <h3>Pseudo-classes</h3>
+        <ul>
+          <li><code>:hover</code> - when the mouse hovers over an element</li>
+          <li><code>:active</code> - when an element is being activated</li>
+          <li><code>:focus</code> - when an element has focus</li>
+          <li>
+            <code>:nth-child(n)</code> - selects the nth child of its parent
+          </li>
+          <li>
+            <code>:target</code> - selects the current active target element
+          </li>
+        </ul>
+        <h3>Pseudo-elements</h3>
+        <ul>
+          <li><code>::before</code> - insert content before an element</li>
+          <li><code>::after</code> - insert content after an element</li>
+          <li>
+            <code>::first-letter</code> - selects the first letter of a
+            block-level element
+          </li>
+          <li>
+            <code>::first-line</code> - selects the first line of a block-level
+            element
+          </li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h2>3. Specificity and Inheritance</h2>
+        <h3>Specificity</h3>
+        <p>
+          Specificity determines which CSS rule is applied when multiple rules
+          target the same element. From highest to lowest:
+        </p>
+        <ol>
+          <li>Inline styles</li>
+          <li>IDs</li>
+          <li>Classes, attributes, and pseudo-classes</li>
+          <li>Elements and pseudo-elements</li>
+        </ol>
+        <h3>Inheritance</h3>
+        <p>
+          Some CSS properties are inherited by child elements from their parent
+          elements. Examples include:
+        </p>
+        <ul>
+          <li>color</li>
+          <li>font-family</li>
+          <li>font-size</li>
+          <li>line-height</li>
+        </ul>
+      </div>
+
+      <div class="topic">
+        <h2>4. Colors and Gradients</h2>
+        <h3>Color Representations</h3>
+        <ul>
+          <li>Hexadecimal: <code>#RRGGBB</code></li>
+          <li>RGB: <code>rgb(red, green, blue)</code></li>
+          <li>RGBA: <code>rgba(red, green, blue, alpha)</code></li>
+          <li>HSL: <code>hsl(hue, saturation, lightness)</code></li>
+          <li>HSLA: <code>hsla(hue, saturation, lightness, alpha)</code></li>
+        </ul>
+        <h3>Gradients</h3>
+        <h4>Linear Gradient</h4>
+        <pre><code>background: linear-gradient(direction, color1, color2, ...);</code></pre>
+        <h4>Radial Gradient</h4>
+        <pre><code>background: radial-gradient(shape size at position, color1, color2, ...);</code></pre>
+      </div>
+    </div>
+  </body>
+</html>

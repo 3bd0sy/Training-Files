@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Schedule</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid gray;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      .morning {
+        background-color: #e0f7fa;
+      }
+
+      .afternoon {
+        background-color: #ffe0b2;
+      }
+
+      .evening {
+        background-color: #dcedc8;
+      }
+
+      .meeting {
+        background-color: #c8e6c9;
+      }
+
+      .event {
+        background-color: #ffab91;
+      }
+
+      .workshop {
+        background-color: #b3e5fc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weekly Schedule</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 9 AM to 12 PM -->
+        <tr>
+          <td>9 AM - 12 PM</td>
+          <td class="morning" colspan="2">Morning Meeting</td>
+          <td class="morning">Project Work</td>
+          <td class="morning" colspan="2">Client Meeting</td>
+          <td></td>
+          <td class="morning">Work on Presentation</td>
+        </tr>
+        <!-- 12 PM to 3 PM -->
+        <tr>
+          <td>12 PM - 3 PM</td>
+          <td class="afternoon">Lunch Break</td>
+          <td class="afternoon" colspan="2">Team Workshop</td>
+          <td class="afternoon">Team Lunch</td>
+          <td class="afternoon" colspan="2">Free Time</td>
+          <td class="afternoon">Lunch with Client</td>
+        </tr>
+        <!-- 3 PM to 5 PM -->
+        <tr>
+          <td>3 PM - 5 PM</td>
+          <td class="evening">Email Review</td>
+          <td class="evening">Project Planning</td>
+          <td class="evening">Presentation Prep</td>
+          <td class="evening" colspan="2">Project Meeting</td>
+          <td class="evening">Team Debrief</td>
+          <td class="evening">Weekly Review</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

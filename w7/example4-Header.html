@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #4caf50;/* rgb(76, 175, 80) */
+        color: white;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      nav {
+        /* flex: 1; */
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav > ul > li a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      nav ul li a:hover {
+        background-color: white;
+        color: #45a049;
+      }
+      .header-buttons {
+        display: flex;
+        gap: 10px;
+      }
+
+      .header-buttons a {
+        background-color: white;
+        color: #4caf50;
+        border: none;
+        padding: 8px 16px;
+        cursor: help;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .header-buttons a:hover {
+        background-color: #45a049;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-buttons">
+        <a>Login</a>
+        <a>Sign Up</a>
+      </div>
+    </header>
+  </body>
+</html>
