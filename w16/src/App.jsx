@@ -23,11 +23,13 @@ export default function App() {
 
     // Check if the field belongs to profile settings
     if (name in user.profileSettings) {
-      setUser((prev) => ({
-        ...prev,profileSettings: {
-          ...prev.profileSettings,[name]: value,
+      setUser({
+        ...user,
+        profileSettings: {
+          ...user.profileSettings,
+          [name]: value,
         },
-      }));
+      });
     } else {
       setUser({ ...user, [name]: value });
     }
@@ -80,7 +82,7 @@ export default function App() {
     }
 
     // Update the user in the list
-    setUsers((prev) => prev.map((u) => (u.id === user.id ? user : u)));
+    setUsers(users.map((u) => (u.id === user.id ? user : u)));
 
     alert("User updated successfully!");
   };
