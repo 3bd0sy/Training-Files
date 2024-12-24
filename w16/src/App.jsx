@@ -20,8 +20,6 @@ export default function App() {
   // Handle changes in form fields
   const handleChange = (e) => {
     const { name, value } = e.target;
-
-    // Check if the field belongs to profile settings
     if (name in user.profileSettings) {
       setUser({
         ...user,
@@ -50,7 +48,6 @@ export default function App() {
   // Save a new user
   const saveNewUser = (e) => {
     e.preventDefault();
-
     // Validate the input for first name and last name
     if (!user.firstName || !user.lastName) {
       alert("Please enter both first name and last name");
@@ -62,7 +59,6 @@ export default function App() {
       ...user,
       id: Date.now().toString(),
     };
-
     // Add the new user to the list
     setUsers([...users, newUser]);
 
@@ -74,19 +70,18 @@ export default function App() {
   // Update an existing user's data
   const updateUser = (e) => {
     e.preventDefault();
-
     // Ensure the user ID is entered
     if (!user.id) {
       alert("Please enter the user's ID first");
       return;
     }
-
     // Update the user in the list
-    setUsers(users.map((u) => (u.id === user.id ? user : u)));
+    setUsers(users.map((u) => (u.id == user.id ? user : u)));
+   
 
     alert("User updated successfully!");
   };
-
+  // na.me@domain.com
   // Reset the form to default state
   const resetForm = () => {
     setUser({
